@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack Boilerplate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/1177e7409e.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <img src="./assets/astronaut.svg" alt="austronaut">
+    <!-- Menu -->
+    <header>
+        <div class="main-container">
+            <span>Logo</span>
+            <nav>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Portfolio</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li><button>Download CV</button></li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <main>
+        <img src="./assets/bg1.svg" alt="bg1" id="bg1">
+        <img src="./assets/bg2.svg" alt="bg2" id="bg2">
+        <img src="./assets/bg3.svg" alt="bg3" id="bg3">
+        <img src="./assets/bg4.svg" alt="bg4" id="bg4">
+        <img src="./assets/text.svg" alt="Cristian Zambrano" id="bg5">
+        <div class="main-container">
+            <div class="container l-c">
+                <span id="hero-intro">Hello I'm</span>
+                <h1>Cristian Zambrano</h1>
+                <p>A Web and Game Developer from Nicaragua that enjoys discovering new technologies</p>
+            </div>
+            <div class="container r-c">
+                <div class="dynamic-block d-xp">
+                    <span class="y" id="y">0</span>
+                    <span class="experience-text">Years of <br>Experience</span>
+                </div>
+                <div class="dynamic-block d-pj">
+                    <span class="p">10+</span>
+                    <span class="experience-text">Projects <br>Completed</span>
+                </div>
+                <div class="dynamic-block d-award">
+                    <img src="./assets/award.svg" alt="award vector" id="hero-deco">
+                </div>
+                <img src="https://i.imgur.com/9l7I3RB.jpg" alt="Cristian Zambrano">
+            </div>
+        </div>
+    </main>
+    <!-- Values Section -->
+    <section class="values">
+        <div class="main-container" id="v-container">
+        </div>
+        <template id="v-template">
+            <div class="container value-box">
+                <div class="title-v">
+                    <div class="n-v">
+                        <span class="n">01</span>
+                        <h3 class="v">Dedication</h3>
+                    </div>
+                    <div class="icon-v">
+                        <img src="./assets/design.svg">
+                    </div>
+                </div>
+                <span class="separator"></span>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam nemo fugiat cum vel, corrupti laudantium beatae iste odit rem omnis veritatis.</p>
+            </div>
+        </template>
+    </section> 
 </body>
 </html>
