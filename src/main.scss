@@ -135,32 +135,18 @@ main {
 
         .social-icons {
             display: flex;
-            list-style: none;
-            margin: 0.5vw 0;
 
-            i {
-                font-size: 2.5rem;
+            .hpicon {
+                width: 35px;
+                height: auto;
+                border-radius: 0;
+                padding: 0.5rem;
+                transition: 0.5s;
             }
 
-            a {
-                height: 3.5rem;
-                width: 2rem;
-                text-decoration: none;
-                color: white;
-                margin-right: 1.5vw;
-                transition: color 0.7s ease;
+            .hpicon:hover {
+                filter: drop-shadow(0 0 0.25rem white);
             }
-
-            a:hover {
-                color: #023047;
-                filter: drop-shadow(0 0 0.45rem white);
-
-                i {
-                    font-size: 3.5rem;
-                    transition: font-size 0.7s ease;
-                }
-            }
-
         }
 
         img {
@@ -258,6 +244,9 @@ main {
     height: 65vh;
     display: flex;
     align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
 
     .value-box {
         width: 30%;
