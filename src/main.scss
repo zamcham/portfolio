@@ -244,6 +244,9 @@ main {
     height: 65vh;
     display: flex;
     align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
 
     .value-box {
         width: 30%;
