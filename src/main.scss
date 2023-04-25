@@ -15,7 +15,7 @@ html {
 }
 
 .main-container {
-    width: 75%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -393,6 +393,45 @@ main {
 
 }
 
+.stats {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    position: relative;
+    background-color: white;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            padding: 0 0.5rem;
+            font-size: 2rem;
+        }
+
+        .orange-text {
+            font-size: 5.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .deco-box {
+        position: absolute;
+        background-color: #0A99D9;
+        height: 200px;
+        width: 200px;
+        right: -15px;
+        border-radius: 1.5rem;
+        z-index: 4;
+    }
+
+    #decobox {
+        top: 0;
+    }
+}
+
+// Animations
 .hidden {
     opacity: 0;
     transform: translateY(50%);
@@ -414,7 +453,7 @@ main {
 
 .pop-effect {
     transform: scale(0.01);
-    transition: all 1s;
+    transition: all 0.6s;
 }
 
 .pop-active {
