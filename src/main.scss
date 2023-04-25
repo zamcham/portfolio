@@ -245,7 +245,7 @@ main {
 }
 
 .values {
-    height: 65vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     background-color: white;
@@ -391,4 +391,56 @@ main {
         top: 1vw;
     }
 
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1.4s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.value-box:nth-child(2) {
+    transition-delay: 250ms;
+}
+
+.value-box:nth-child(3) {
+    transition-delay: 450ms;
+}
+
+.pop-effect {
+    transform: scale(0.01);
+    transition: all 1s;
+}
+
+.pop-active {
+    transform: scale(1);
+}
+
+.s-logo:nth-child(1) {
+    transition-delay: 250ms;
+}
+
+.s-logo:nth-child(2) {
+    transition-delay: 500ms;
+}
+
+.s-logo:nth-child(3) {
+    transition-delay: 100ms;
+}
+
+.s-logo:nth-child(4) {
+    transition-delay: 10ms;
+}
+
+.s-logo:nth-child(5) {
+    transition-delay: 300ms;
+}
+
+.s-logo:nth-child(6) {
+    transition-delay: 420ms;
 }
