@@ -15,7 +15,7 @@ html {
 }
 
 .main-container {
-    width: 75%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -245,7 +245,7 @@ main {
 }
 
 .values {
-    height: 65vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     background-color: white;
@@ -391,4 +391,95 @@ main {
         top: 1vw;
     }
 
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    position: relative;
+    background-color: white;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            padding: 0 0.5rem;
+            font-size: 2rem;
+        }
+
+        .orange-text {
+            font-size: 5.5rem;
+            font-weight: 600;
+        }
+    }
+
+    .deco-box {
+        position: absolute;
+        background-color: #0A99D9;
+        height: 200px;
+        width: 200px;
+        right: -15px;
+        border-radius: 1.5rem;
+        z-index: 4;
+    }
+
+    #decobox {
+        top: 0;
+    }
+}
+
+// Animations
+.hidden {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1.4s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.value-box:nth-child(2) {
+    transition-delay: 250ms;
+}
+
+.value-box:nth-child(3) {
+    transition-delay: 450ms;
+}
+
+.pop-effect {
+    transform: scale(0.01);
+    transition: all 0.6s;
+}
+
+.pop-active {
+    transform: scale(1);
+}
+
+.s-logo:nth-child(1) {
+    transition-delay: 250ms;
+}
+
+.s-logo:nth-child(2) {
+    transition-delay: 500ms;
+}
+
+.s-logo:nth-child(3) {
+    transition-delay: 100ms;
+}
+
+.s-logo:nth-child(4) {
+    transition-delay: 10ms;
+}
+
+.s-logo:nth-child(5) {
+    transition-delay: 300ms;
+}
+
+.s-logo:nth-child(6) {
+    transition-delay: 420ms;
 }
