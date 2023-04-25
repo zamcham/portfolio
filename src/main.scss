@@ -21,6 +21,10 @@ html {
     justify-content: space-between;
 }
 
+.orange-text {
+    color: $orange-color;
+}
+
 .container {
     font-size: 1.7rem;
     font-weight: 600;
@@ -287,4 +291,104 @@ main {
             margin: 2.5vw 0;
         }
     }
+}
+
+.about {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 70%;
+        height: auto;
+        border-radius: 2rem;
+    }
+
+    .l-c {
+        position: relative;
+    }
+
+    .r-c {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+           margin-bottom: 0.5rem;
+           font-size: 2rem; 
+        }
+
+        h4 {
+            font-size: 2.5rem; 
+        }
+
+        button {
+            background-color: $orange-color;
+            border: none;
+            border-radius: 5rem;
+            width: 50%;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white;
+            padding: 1.2rem 2rem;
+        }
+    }
+
+    #ab-fl-ps {
+        position: absolute;
+        max-width: 12%;
+        height: auto;
+        border-radius: 0;
+        right: 18vw;
+        top: -3vw;
+    }
+
+    #ab-fl-il {
+        position: absolute;
+        max-width: 9%;
+        height: auto;
+        border-radius: 0;
+        right: 9vw;
+        top: -7vw;
+    }
+
+    #ab-fl-rct {
+        position: absolute;
+        max-width: 10%;
+        height: auto;
+        border-radius: 0;
+        left: -5vw;
+        bottom: 5vw;
+    }
+
+    #ab-fl-css {
+        position: absolute;
+        max-width: 8%;
+        height: auto;
+        border-radius: 0;
+        bottom: -5vw;
+        left: -3vw;
+    }
+
+    #ab-fl-js {
+        position: absolute;
+        max-width: 10%;
+        height: auto;
+        border-radius: 0;
+        bottom: -1.5vw;
+        left: 3vw;
+    }
+
+    #ab-fl-unity {
+        position: absolute;
+        max-width: 18%;
+        height: auto;
+        border-radius: 0;
+        right: 6vw;
+        top: 1vw;
+    }
+
 }
