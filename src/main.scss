@@ -9,6 +9,11 @@ html {
     font-weight: 400;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -343,7 +348,7 @@ main {
         height: auto;
         border-radius: 0;
         right: 18vw;
-        top: -3vw;
+        top: -4vh;
     }
 
     #ab-fl-il {
@@ -351,8 +356,8 @@ main {
         max-width: 9%;
         height: auto;
         border-radius: 0;
-        right: 9vw;
-        top: -7vw;
+        right: 13vw;
+        top: -5vw;
     }
 
     #ab-fl-rct {
@@ -361,7 +366,7 @@ main {
         height: auto;
         border-radius: 0;
         left: -5vw;
-        bottom: 5vw;
+        bottom: 3vw;
     }
 
     #ab-fl-css {
@@ -369,8 +374,8 @@ main {
         max-width: 8%;
         height: auto;
         border-radius: 0;
-        bottom: -5vw;
-        left: -3vw;
+        bottom: -4vw;
+        left: -2vw;
     }
 
     #ab-fl-js {
@@ -482,4 +487,107 @@ main {
 
 .s-logo:nth-child(6) {
     transition-delay: 420ms;
+}
+
+@media (max-width: 820px) {
+
+    .main-container {
+        width: 85%;
+    }
+    
+    main{
+
+        height: 85vh;
+
+        .r-c {
+
+            #main-headshot {
+                border-radius: 1rem;
+                max-width: 90%;
+            }
+    
+            h1 {
+                font-size: 4vw;
+            }
+    
+            .d-xp {
+                left: 1rem;
+                padding: 1rem;
+    
+                .y {
+                    font-size: 4.5vw;
+                }
+    
+                .experience-text {
+                    font-size: 1.8vw;
+                }
+            }
+    
+            .d-pj {
+                right: -6vw;
+                padding: 1rem;
+    
+                .p {
+                    font-size: 4.5vw;
+                }
+    
+                .experience-text {
+                    font-size: 1.8vw;
+                }
+            }
+    
+            .d-award {
+                padding: 1rem;
+            }
+
+        }
+
+        .l-c {
+
+            #hero-intro {
+                font-size: 2.5vw;
+            }
+
+            p {
+                font-size: 2.5vw;
+            }
+        }
+    }
+
+    .values {
+        height: 40vh;
+    }
+
+    .about {
+        height: 40vh;
+
+        .l-c {
+            img {
+                max-width: 90%;
+            }
+        }
+
+        #ab-fl-unity {
+            top: -2.2vh;
+            right: 1vw;
+        }
+
+        #ab-fl-il {
+            top: -5vh;
+            right: 12vw;
+        }
+
+        #ab-fl-rct {
+            top: 20vh;
+        }
+
+        #ab-fl-js {
+            top: 23vh;
+        }
+        
+        #ab-fl-css {
+            top: 25vh;
+            left: -2.5vw;
+        }
+    }
 }
