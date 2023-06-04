@@ -431,10 +431,49 @@ main .d-pj .experience-text {
 .projects .main-container {
   flex-direction: column;
 }
+.projects .main-container .projects-intro {
+  text-align: center;
+}
+.projects .main-container .projects-intro h1 {
+  color: #D8315B;
+  font-size: 3rem;
+}
 .projects .project-container {
-  height: 300px;
+  height: 35vw;
   background-color: #009ffd;
-  border-radius: 15px;
+  border-radius: 25px;
+  margin-top: 5vh;
+  position: relative;
+  overflow: hidden;
+}
+.projects .project-container .project-bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+.projects .project-container .project-desc-container {
+  z-index: 5;
+  position: absolute;
+}
+.projects .project-container .project-bg-image {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  background-image: url("./assets/SpaceTraveler.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.projects .project-container:hover .project-bg-image {
+  transform: scale(1.1);
 }
 
 @media (max-width: 820px) {
