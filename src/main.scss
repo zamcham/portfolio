@@ -567,12 +567,23 @@ main {
             top: 0;
             left: 0;
             border-radius: 25px;
-            background-image: url('./assets/SpaceTraveler.png');
             background-size: cover;
             background-position: center;
             width: 100%;
             height: 100%;
             transition: transform 0.3s;
+        }
+
+        .bgi1 {
+            background-image: url('./assets/SpaceTraveler.png');
+        }
+
+        .bgi2 {
+            background-image: url('./assets/LevelUp.png');
+        }
+
+        .bgi3 {
+            background-image: url('./assets/WildVista.png');
         }
     }
 
@@ -580,6 +591,10 @@ main {
         .project-bg-image {
             transform: scale(1.1);
         }
+    }
+
+    .all-projects {
+        background-color: #2a2a72;
     }
 }
 
