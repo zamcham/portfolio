@@ -605,11 +605,15 @@ main {
             border-radius: 25px;
 
             .skill-type-card {
-                padding: 20px;
+                padding: 30px;
                 height: 40vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                img {
+                    width: 100px;
+                }
 
                 h1 {
                     color: white;
