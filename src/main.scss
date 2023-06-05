@@ -593,8 +593,35 @@ main {
         }
     }
 
-    .all-projects {
-        background-color: #2a2a72;
+    .all-types {
+        margin-top: 10vh;
+
+        .all-types-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            background-color: #2a2a72;
+            border-radius: 25px;
+
+            .skill-type-card {
+                padding: 20px;
+                height: 40vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    color: white;
+                    font-size: 4rem;
+                }
+
+                p {
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }
 
