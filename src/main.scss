@@ -99,6 +99,7 @@ main {
     background-color: #2a2a72;
     background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     position: relative;
+    overflow: hidden;
 
     #bg1,
     #bg2,
@@ -491,10 +492,20 @@ main {
 
 .projects {
     margin-top: 12vh;
+    position: relative;
+
+    .deco-box {
+        position: absolute;
+        background-color: #6A97D3;
+        height: 400px;
+        width: 400px;
+        left: -5%;
+        border-radius: 2vh;
+        z-index: 1;
+    }
 
     .main-container {
         flex-direction: column;
-
         .projects-intro {
             text-align: center;
 
