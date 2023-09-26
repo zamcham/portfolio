@@ -263,6 +263,29 @@ main {
         display: flex;
         flex-direction: column;
 
+        .skill-tags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                list-style: none;
+                padding: 0.7rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                background-color: #cad0f1;
+                border-radius: 5px;
+                margin: 0.5rem;
+            }
+
+            li:hover {
+                background-color: #6E7ED1;
+                color: white;
+                cursor: default;
+            }
+        }
+
         .title-v {
             display: flex;
             justify-content: space-between;
