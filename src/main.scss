@@ -622,6 +622,22 @@ main {
         background-color: white;
         z-index: 11;
         border-radius: 20px;
+        overflow: scroll;
+        padding: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .modal-photo {
+            width: 80%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .modal-details {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
