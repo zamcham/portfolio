@@ -635,8 +635,15 @@ main {
         }
 
         .modal-details {
+            width: 80%;
             display: flex;
             justify-content: space-between;
+            padding: 50px 0;
+
+            .modal-project-desc,
+            .modal-project-skills {
+                flex: 1;
+            }
         }
     }
 }
