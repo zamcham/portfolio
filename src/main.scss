@@ -545,7 +545,7 @@ main {
             width: 100%;
             height: 100%;
             z-index: 3;
-            background: linear-gradient(to bottom right,rgba(11,159,221, 0.3), rgba(216,49,91, 0.8));
+            background: linear-gradient(to right,rgba(0, 0, 0, 0.6), rgba(216,49,91, 0.2));
         }
 
         .project-desc-container {
@@ -555,7 +555,7 @@ main {
             width: 40%;
 
             h2 {
-                color: $orange-color;
+                color: white;
                 font-size: 2rem;
             }
 
@@ -574,7 +574,7 @@ main {
             }
         }
 
-        .project-bg-image {
+        #project-bg-image-1 {
             z-index: 1;
             position: absolute;
             top: 0;
@@ -590,7 +590,7 @@ main {
     }
 
     .project-container:hover {
-        .project-bg-image {
+        #project-bg-image-1 {
             transform: scale(1.1);
         }
     }
