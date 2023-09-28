@@ -640,9 +640,21 @@ main {
             justify-content: space-between;
             padding: 50px 0;
 
-            .modal-project-desc,
+            .modal-project-desc {
+                width: 75%;
+
+                h1 {
+                    margin: 2vh 0;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    color: gray;
+                    line-height: 3rem;
+                }
+            }
             .modal-project-skills {
-                flex: 1;
+                width: 35%;
             }
         }
     }
