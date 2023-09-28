@@ -614,9 +614,9 @@ main {
 
     .modal-body {
         position: absolute;
-        width: 60%;
+        width: 50%;
         height: 80vh;
-        top: 10vh;
+        top: 5vh;
         left: 50%;
         transform: translateX(-50%);
         background-color: white;
@@ -654,6 +654,7 @@ main {
                 }
             }
             .modal-project-skills {
+                padding-left: 20px;
                 width: 35%;
                 display: flex;
                 flex-direction: column;
