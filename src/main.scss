@@ -36,6 +36,22 @@ body {
             cursor: default;
         }
     }
+
+    .red-button {
+        background-color: $orange-color;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        transition: 0.5s ease;
+    }
+
+    .red-button:hover {
+        background-color: $yellow-color;
+        cursor: pointer;
+    }
 }
 
 * {
@@ -96,22 +112,6 @@ header {
             padding: 1rem 1.5rem;
             align-self: center;
         }
-    }
-
-    button {
-        background-color: $orange-color;
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 5rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: white;
-        transition: 0.5s ease;
-    }
-
-    button:hover {
-        background-color: $yellow-color;
-        cursor: pointer;
     }
 }
 
@@ -658,6 +658,17 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            }
+        }
+
+        .modal-actions {
+            width: 80%;
+            display: flex;
+            justify-content: flex-start;
+
+            button {
+                margin-right: 1vw;
+                padding: 1rem 2rem;
             }
         }
     }
