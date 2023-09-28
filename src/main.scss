@@ -614,7 +614,7 @@ main {
 
     .modal-body {
         position: absolute;
-        width: 70%;
+        width: 60%;
         height: 80vh;
         top: 10vh;
         left: 50%;
@@ -655,6 +655,9 @@ main {
             }
             .modal-project-skills {
                 width: 35%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
         }
     }
