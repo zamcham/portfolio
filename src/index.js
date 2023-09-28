@@ -36,6 +36,7 @@ viewProjectButtons.forEach((button, index) => {
 });
 
 // Attach event listeners to close buttons in modals
+//TODO: Check if this is working
 closeButtons.forEach((closeButton) => {
     closeButton.addEventListener('click', () => {
         // Get the modal ID from the button's ID
