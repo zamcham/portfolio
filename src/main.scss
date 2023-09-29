@@ -514,7 +514,10 @@ main {
 }
 
 .projects {
-    margin-top: 12vh;
+    padding-top: 12vh;
+    background-color: white;
+    position: relative;
+    z-index: 5;
 
     .main-container {
         flex-direction: column;
