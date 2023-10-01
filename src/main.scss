@@ -569,11 +569,20 @@ main {
             }
 
             button {
-                background: none;
+                background: $yellow-color;
+                padding: 15px;
+                border-radius: 25px;
                 border: none;
                 text-transform: uppercase;
                 color: white;
                 font-weight: 600;
+                font-size: 1.8rem;
+                transition: all 0.3s;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background: $orange-color;
             }
         }
 
