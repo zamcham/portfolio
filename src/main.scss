@@ -717,11 +717,22 @@ main {
 }
 
 .contact {
+
+    .main-container {
+        background-color: #042482;
+        padding-top: 10vh;
+        border-radius: 20px;
+    }
+
     .l-c {
         width: 50%;
+        color: #042482;
+        padding: 5rem;
     }
 
     padding-top: 12vh;
+    padding-bottom: 10vh;
+
     #fs-frm {
         width: 100%;
 
@@ -733,17 +744,27 @@ main {
 
             input,
             textarea {
-                width: 100%;
-                padding: 1rem;
+                max-width: 100%;
+                padding: 2rem;
                 margin-bottom: 1rem;
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 resize: vertical;
             }
+        }
 
-            .form-submit {
-                width: 100%;
-            }
+        .form-submit {
+            width: 100%;
+            padding: 2rem;
+            background-color: $orange-color;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 1.8rem;
+            font-family: 'Barlow', sans-serif;
         }
     }
 
