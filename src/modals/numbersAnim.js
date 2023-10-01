@@ -16,7 +16,11 @@ export const updateNumber = () => {
   currentNumber++;
   
   // Update the content of the span element
-  numberSpan.textContent = currentNumber;
+  if (numberSpan.textContent)
+  {
+    numberSpan.textContent = currentNumber;
+  }
+
   
   // Check if the current number has reached the target number
   if (currentNumber === targetNumber) {

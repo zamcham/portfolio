@@ -577,23 +577,32 @@ main {
             }
         }
 
-        #project-bg-image-1 {
+        #project-bg-image-1,
+        #project-bg-image-2 {
             z-index: 1;
             position: absolute;
             top: 0;
             left: 0;
             border-radius: 25px;
-            background-image: url('./assets/wildVista.png');
             background-size: cover;
             background-position: center;
             width: 100%;
             height: 100%;
             transition: transform 0.3s;
         }
+
+        #project-bg-image-1 {
+            background-image: url('./assets/levelup.png');
+        }
+
+        #project-bg-image-2 {
+            background-image: url('./assets/wildVista.png');
+        }
     }
 
     .project-container:hover {
-        #project-bg-image-1 {
+        #project-bg-image-1,
+        #project-bg-image-2 {
             transform: scale(1.1);
         }
     }
